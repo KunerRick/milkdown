@@ -1,0 +1,23 @@
+import { MilkdownPlugin, Slice, Timer } from '@milkdown/ctx';
+import { InputRule } from '@milkdown/prose/inputrules';
+import { Plugin } from '@milkdown/prose/state';
+import { MarkViewConstructor, NodeViewConstructor } from '@milkdown/prose/view';
+import { RemarkParser, RemarkPlugin } from '@milkdown/transformer';
+import { Options } from 'remark-stringify';
+import type { Editor } from '../editor';
+export declare const InitReady: Timer;
+export declare const initTimerCtx: Slice<Timer[], "initTimer">;
+export declare const editorCtx: Slice<Editor, "editor">;
+export declare const inputRulesCtx: Slice<InputRule[], "inputRules">;
+export declare const prosePluginsCtx: Slice<Plugin<any>[], "prosePlugins">;
+export declare const remarkPluginsCtx: Slice<RemarkPlugin[], "remarkPlugins">;
+declare type NodeView = [nodeId: string, view: NodeViewConstructor];
+export declare const nodeViewCtx: Slice<NodeView[], "nodeView">;
+declare type MarkView = [nodeId: string, view: MarkViewConstructor];
+export declare const markViewCtx: Slice<MarkView[], "markView">;
+export declare const remarkCtx: Slice<RemarkParser>;
+export declare const remarkStringifyDefaultOptions: Options;
+export declare const remarkStringifyOptionsCtx: Slice<Options, "remarkStringifyOptions">;
+export declare const init: (editor: Editor) => MilkdownPlugin;
+export {};
+//# sourceMappingURL=init.d.ts.map

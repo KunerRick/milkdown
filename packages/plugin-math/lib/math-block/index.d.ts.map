@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../src/math-block/index.ts"],"names":[],"mappings":"AAOA,OAAc,EAAE,YAAY,EAAE,MAAM,OAAO,CAAC;AAI5C,aAAK,OAAO,GAAG;IACX,WAAW,EAAE;QACT,KAAK,EAAE,MAAM,CAAC;QACd,KAAK,EAAE,MAAM,CAAC;KACjB,CAAC;IACF,YAAY,EAAE,YAAY,CAAC;CAC9B,CAAC;AAEF,eAAO,MAAM,SAAS,wDAmKpB,CAAC"}

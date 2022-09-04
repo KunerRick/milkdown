@@ -1,0 +1,30 @@
+import { Node, NodeType } from '@milkdown/prose/model';
+import { Command, EditorState, Transaction } from '@milkdown/prose/state';
+import { Rect, TableMap } from './table-map';
+export declare function selectedRect(state: EditorState): Required<Rect>;
+export declare function addColumn(tr: Transaction, { map, tableStart, table }: Rect, col: number): Transaction;
+export declare const addColumnBefore: Command;
+export declare const addColumnAfter: Command;
+export declare function removeColumn(tr: Transaction, { map, table, tableStart }: Rect, col: number): void;
+export declare const deleteColumn: Command;
+export declare function rowIsHeader(map: TableMap, table: Node, row: number): boolean;
+export declare function addRow(tr: Transaction, { map, tableStart, table }: Rect, row: number): Transaction;
+export declare function addRowBefore(state: EditorState, dispatch?: (tr: Transaction) => boolean): boolean;
+export declare function addRowAfter(state: EditorState, dispatch?: (tr: Transaction) => boolean): boolean;
+export declare function removeRow(tr: Transaction, { map, tableStart, table }: Rect, row: number): void;
+export declare const deleteRow: Command;
+export declare function mergeCells(state: EditorState, dispatch?: (tr: Transaction) => boolean): boolean;
+export declare function splitCell(state: EditorState, dispatch?: (tr: Transaction) => boolean): boolean;
+export declare function splitCellWithType(getCellType: (pos: {
+    row: number;
+    col: number;
+    node: Node;
+}) => NodeType): (state: EditorState, dispatch?: ((tr: Transaction) => boolean) | undefined) => boolean;
+export declare function setCellAttr<T>(name: string, value: T): Command;
+export declare function toggleHeader(type: string): (state: EditorState, dispatch?: ((tr: Transaction) => boolean) | undefined) => boolean;
+export declare const toggleHeaderRow: (state: EditorState, dispatch?: ((tr: Transaction) => boolean) | undefined) => boolean;
+export declare const toggleHeaderColumn: (state: EditorState, dispatch?: ((tr: Transaction) => boolean) | undefined) => boolean;
+export declare const toggleHeaderCell: (state: EditorState, dispatch?: ((tr: Transaction) => boolean) | undefined) => boolean;
+export declare function goToNextCell(direction: number): Command;
+export declare const deleteTable: Command;
+//# sourceMappingURL=commands.d.ts.map

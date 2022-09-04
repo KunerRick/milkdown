@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../src/prose-plugin/index.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,MAAM,EAAa,MAAM,uBAAuB,CAAC;AAC1D,OAAO,EAAE,UAAU,EAAE,MAAM,iBAAiB,CAAC;AAE7C,OAAO,KAAK,EAAE,mBAAmB,EAAE,MAAM,IAAI,CAAC;AAK9C,eAAO,MAAM,GAAG,mBAAmB,CAAC;AAEpC,eAAO,MAAM,iBAAiB,UAAW,UAAU,WAAW,mBAAmB,aAAa,MAAM,gBAQnG,CAAC"}
