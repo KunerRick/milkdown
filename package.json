@@ -7,7 +7,7 @@
         "pnpm": ">=7"
     },
     "scripts": {
-        "postinstall": "husky install",
+        "postinstall": "echo 'post install'",
         "test": "pnpm test:doc && pnpm test:lint && pnpm test:tsc:cache && pnpm test:unit",
         "test:unit": "vitest",
         "test:tsc": "pnpm --filter=@milkdown/* run tsc",
